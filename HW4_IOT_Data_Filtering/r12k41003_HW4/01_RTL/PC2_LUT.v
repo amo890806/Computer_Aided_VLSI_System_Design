@@ -1,0 +1,53 @@
+module PC2_LUT (
+    input [55:0] din,
+    output [47:0] dout
+);
+assign dout[47] = din[42];
+assign dout[46] = din[39];
+assign dout[45] = din[45];
+assign dout[44] = din[32];
+assign dout[43] = din[55];
+assign dout[42] = din[51];
+assign dout[41] = din[53];
+assign dout[40] = din[28];
+assign dout[39] = din[41];
+assign dout[38] = din[50];
+assign dout[37] = din[35];
+assign dout[36] = din[46];
+assign dout[35] = din[33];
+assign dout[34] = din[37];
+assign dout[33] = din[44];
+assign dout[32] = din[52];
+assign dout[31] = din[30];
+assign dout[30] = din[48];
+assign dout[29] = din[40];
+assign dout[28] = din[49];
+assign dout[27] = din[29];
+assign dout[26] = din[36];
+assign dout[25] = din[43];
+assign dout[24] = din[54];
+assign dout[23] = din[15];
+assign dout[22] = din[4];
+assign dout[21] = din[25];
+assign dout[20] = din[19];
+assign dout[19] = din[9];
+assign dout[18] = din[1];
+assign dout[17] = din[26];
+assign dout[16] = din[16];
+assign dout[15] = din[5];
+assign dout[14] = din[11];
+assign dout[13] = din[23];
+assign dout[12] = din[8];
+assign dout[11] = din[12];
+assign dout[10] = din[7];
+assign dout [9] = din[17];
+assign dout [8] = din[0];
+assign dout [7] = din[22];
+assign dout [6] = din[3];
+assign dout [5] = din[10];
+assign dout [4] = din[14];
+assign dout [3] = din[6];
+assign dout [2] = din[20];
+assign dout [1] = din[27];
+assign dout [0] = din[24];
+endmodule

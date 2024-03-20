@@ -1,0 +1,58 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : core
+Version: U-2022.12
+Date   : Mon Nov  6 15:21:06 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: in_1_r_reg[7][4]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: R_157 (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  in_1_r_reg[7][4]/CK (DFFHQX8)            0.00       0.50 r
+  in_1_r_reg[7][4]/Q (DFFHQX8)             0.23       0.73 f
+  U5832/Y (BUFX8)                          0.13       0.86 f
+  U7499/S (CMPR42X2)                       0.82       1.68 f
+  U10043/Y (NAND2X2)                       0.18       1.86 r
+  U10044/Y (OAI21X4)                       0.11       1.97 f
+  U6216/Y (INVX4)                          0.08       2.06 r
+  U5297/Y (NAND2X6)                        0.08       2.14 f
+  U6159/Y (INVX12)                         0.08       2.21 r
+  U6381/Y (OAI21X4)                        0.08       2.29 f
+  U11459/Y (XNOR2X4)                       0.13       2.43 f
+  U11460/CO (ADDFHX4)                      0.32       2.74 f
+  R_157/D (DFFHQX2)                        0.00       2.74 f
+  data arrival time                                   2.74
+
+  clock i_clk (rise edge)                  2.52       2.52
+  clock network delay (ideal)              0.50       3.02
+  clock uncertainty                       -0.10       2.92
+  R_157/CK (DFFHQX2)                       0.00       2.92 r
+  library setup time                      -0.18       2.74
+  data required time                                  2.74
+  -----------------------------------------------------------
+  data required time                                  2.74
+  data arrival time                                  -2.74
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
